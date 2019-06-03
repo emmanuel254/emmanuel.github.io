@@ -1,0 +1,169 @@
+.image{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+}
+
+.about{
+	padding: 5px;
+
+}
+
+.flip-box{
+	background-color: transparent;
+	perspective: 1000px;
+	margin-bottom: 50px;
+}
+.flip-box-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 1.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner{
+	transform: rotatex(180deg);
+}
+
+.flip-box-front, .flip-box-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-box-front{
+
+	color: white;
+}
+
+.flip-box-back{
+	background-color: white;
+	color: white;
+	transform: rotateX(180deg);
+}
+
+
+.ready-btn.light-btn {
+margin-top: 20px;
+  margin-right: 15px;
+  background: indigo;
+  border: 1px solid #3EC1D5 !important;
+}
+
+.ready-btn.light-btn:hover {
+  background: #ee0979 !important;
+  border: 1px solid #fff !important;
+}
+
+.top{
+	margin-top: 1em;
+}
+
+.contact-info{
+	font-size: 15px;
+}
+@media screen and (max-width: 980px){
+       .flip-box-front, .flip-box-back{
+	position: relative;
+	
+}
+
+		.flip-box{
+			background-color: transparent;
+			margin-bottom: 20px;
+		}
+		.flip-box-inner{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+
+		.flip-box:hover .flip-box-inner{
+			transform: none;	
+			cursor: pointer;
+		}
+
+		.flip-box-front, .flip-box-back{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			backface-visibility: ;
+		}
+
+		.flip-box-front{
+			color: white;
+		}
+
+		.flip-box-back{
+			height: 0px;
+			background-color: white;
+			color: white;
+			visibility: hidden;
+		}
+
+		.pages-important
+		{
+			margin-top: 20px;
+		}
+
+		.top{
+			margin-top: 0.5em;
+		}
+
+
+}
+
+.social-icons{
+	width: 30px;
+	height: 30px;
+	border-radius: 4px;
+	margin-right: 3px;
+}
+
+.anchors a{
+	text-decoration: none;
+	color: black;
+}
+
+.anchors a:hover{
+	color: blue;
+}
+
+.google-maps{
+	margin-top: 10px;
+	background-color: white;
+	width: 100%;
+	height: 15em;
+}
+
+.numbers-images img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-left: 50px;
+}
+.app-paragraph{
+	font-size: 29px;
+	margin-top: 10px;
+}
+.app-paragraph-header{
+	margin-top: 3em;
+	margin-bottom: 2em;
+	font-size: 48px;
+}
+
+.events{
+	font-size: 18px;
+}
+
+.fotorama__wrap {
+margin: 0 auto; }
+
+.app-header{
+	font-size: 30px;
+}
